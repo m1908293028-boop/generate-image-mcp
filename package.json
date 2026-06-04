@@ -37,10 +37,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "setup": "node dist/setup.js",
-    "postinstall": "node dist/setup.js",
     "dev": "tsx src/server.ts",
-    "prepublishOnly": "npm run build",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
