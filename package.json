@@ -1,0 +1,65 @@
+{
+  "name": "generate-image-mcp",
+  "version": "1.1.0",
+  "description": "MCP server for AI image generation and repaint with vision analysis",
+  "type": "module",
+  "main": "dist/server.js",
+"bin": {
+    "generate-image-mcp": "dist/server.js",
+    "generate-image-mcp-setup": "dist/setup.js",
+    "generate-image-mcp-install": "dist/install.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "image-generation",
+    "agnes",
+    "openai",
+    "stability-ai",
+    "mimo",
+    "ai",
+    "opencode",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "author": "m1908293028-boop",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m1908293028-boop/generate-image-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m1908293028-boop/generate-image-mcp/issues"
+  },
+  "homepage": "https://github.com/m1908293028-boop/generate-image-mcp#readme",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "setup": "node dist/setup.js",
+    "postinstall": "node dist/setup.js",
+    "dev": "tsx src/server.ts",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "MODELS.md",
+    ".env.example",
+    "LICENSE"
+  ]
+}

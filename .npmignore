@@ -1,0 +1,8 @@
+src/
+.env
+.env.*
+generated-images/
+generated-meta/
+*.tgz
+.DS_Store
+node_modules/
